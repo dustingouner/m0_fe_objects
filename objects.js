@@ -5,33 +5,39 @@
 // the desired result. To check your work, run this
 // file in your Terminal.
 
-foods = {
+var foods = {
   apples: 23, 
   grapes: 507, 
   eggs: 48
-}
+};
+
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 
-Object.keys(foods);
+console.log(Object.keys(foods));
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
-// YOUR CODE HERE
+
+console.log(foods.grapes);
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-// YOUR CODE HERE
 
+console.log(foods.bread = 37);
 
-#-------------------
-// Part 2: Email
-#-------------------
+console.log(Object.keys(foods)); 
+// extra code to check that bread was added
+
+// #-------------------
+// // Part 2: Email
+// #-------------------
 
 
 // Think about all the pieces of information associated with one single email in your inbox.
@@ -41,20 +47,25 @@ Object.keys(foods);
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 // Write code that logs your email object to the terminal.
-
+var email = {
+  from: "dusting@msn.com",
+  to: "lauren2@yahoo.com",
+  Subject: "What is the plan for this weekend?",
+  date: "10/15/2022"
+}
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.keys(email));
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
+console.log(Object.values(email));
 
 
-#-------------------
-// Part 3: Many Emails - CHALLENGE!
-#-------------------
+// #-------------------
+// // Part 3: Many Emails - CHALLENGE!
+// #-------------------
 
 // LONG EXAMPLE:
 // Now that we've learned about Objects AND Arrays, we can combine them.
@@ -62,7 +73,7 @@ Object.keys(foods);
 // Check out the following example of an array of Instagram posts:
 
 
-posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"];
+// posts = ["image at beach", "holiday party", "adorable puppy", "video of cute baby"];
 
 
 // An Array of Objects is probably more realistic. Objects are a data type that's great
@@ -100,3 +111,29 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+email = [
+  {
+    from: "dusting@msn.com",
+    to: "lauren2@yahoo.com",
+    Subject: "What is the plan for this weekend?",
+    date: "10/15/2022"
+  },
+  {
+    from: "henryf@yahoo.com",
+    to: "maryh@gmail.com",
+    Subject: "Happy Birthday!",
+    date: "11/05/2022"
+  },
+  {
+    from: "johns@gmail.com",
+    to: "lukem@yahoo.com",
+    Subject: "Ski Trip 2023!",
+    date: "09/15/2022"
+  }
+];
+
+console.log(email);
+console.log(email[0]);
+
+// Could you let me know if this is right? 
